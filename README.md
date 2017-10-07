@@ -1,14 +1,14 @@
-# CSCI-503 Project
+# Parallel-Gradient-Descent
 
 @Author: Nitin Kamra
 @Author: Palash Goyal
 @Author: Sungyong Seo
 @Author: Vasileios Zois
 
-############################################################################################################################################
+###############################################################################
 Note that we performed the project on our own servers and not on HPCC, so to run the project on HPCC you need to write your own PBS scripts.
 
-############################################################################################################################################
+###############################################################################
 
 To compile the code (assuming you are in project root directory):
 1. Change directory to ./src/
@@ -16,7 +16,7 @@ To compile the code (assuming you are in project root directory):
 3. Change directory to ./cuda/ next
 4. Type "make" on the shell and press enter
 
-############################################################################################################################################
+###############################################################################
 
 NOTE: We do not provide the MNIST dataset. It needs to be downloaded from here: 
 http://yann.lecun.com/exdb/mnist/ 
@@ -29,7 +29,7 @@ To run the naive serial/BLAS serial/Pthreads parallel/BLAS parallel code after c
    Use <./pNNet> to run the Pthreads parallel implementation
    Use <export OPENBLAS_NUM_THREADS=32> followed by <./pNNet_BLAS> to run the BLAS parallel implementation
 
-############################################################################################################################################
+###############################################################################
 
 NOTE: We do not provide the MNIST dataset. It needs to be downloaded from here: 
 https://github.com/mnielsen/neural-networks-and-deep-learning/blob/master/data/mnist.pkl.gz 
@@ -42,7 +42,7 @@ To run the keras serial/keras parallel/keras GPU code after compiling (assuming 
    Use <mv theanorc_cpu ~/.theanorc> followed by <python mlp_keras.py> to run the theano parallel implementation
    Use <mv theanorc_gpu ~/.theanorc> followed by <python mlp_keras.py> to run the theano GPU implementation
 
-############################################################################################################################################
+###############################################################################
 
 NOTE: We do not provide the MNIST dataset. It needs to be downloaded from here: 
 http://yann.lecun.com/exdb/mnist/ 
@@ -53,4 +53,4 @@ This will convert the MNIST dataset to the required CSV format.
 To run the cuda implementation after compiling (assume you are in project root directory):
 1. Change the directory to ./src/cuda_code and follow the instructions in README.txt
 
-############################################################################################################################################
+###############################################################################
